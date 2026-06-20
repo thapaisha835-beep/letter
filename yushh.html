@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TITLE</title>
+    <style>
+        body {
+            min-height: 100vh;
+            margin: 0;
+            background-image: url("C:/Users/Isha/Pictures/bg.jpeg");
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.5);
+            z-index: 1;
+        }
+        .letter {
+            position: center;
+            z-index: 2;
+            background: #90452293;
+            background-image: 
+                linear-gradient(90deg, rgba(155, 50, 38, 0.427) 0%, transparent 10%, transparent 90%, rgba(155, 50, 38, 0.427) 100%);
+            max-width: 600px;
+            max-height: 600px;
+            width: 100%;
+            padding: 60px;
+        }
+        .letter h1 {
+            font-family: 'Georgia', serif;
+            font-size: 2.8rem;
+            color: #3c2415;
+            margin-top: 0;
+            margin-bottom: 10px;
+            text-align: center;
+            letter-spacing: 2px;
+            font-weight: normal;
+            text-shadow: 1px 1px 2px rgba(139, 69, 19, 0.1);
+        }
+
+        .letter .date {
+            text-align: right;
+            font-family: 'Georgia', serif;
+            font-style: italic;
+            color: #580000a5;
+            margin-bottom: 30px;
+            font-size: 1.1rem;
+            border-bottom: 1px dashed rgba(139, 69, 19, 0.3);
+            padding-bottom: 10px;
+        }
+
+        .letter .greeting {
+            font-size: 1.4rem;
+            color: #3c2415;
+            margin-bottom: 15px;
+            font-style: italic;
+        }
+
+        .letter p {
+            font-family: 'Georgia', serif;
+            font-size: 1.15rem;
+            line-height: 1.9;
+            color: #3c2415;
+            margin-bottom: 20px;
+            text-indent: 30px;
+            letter-spacing: 0.3px;
+        }
+
+        .letter .signature {
+            text-align: right;
+            font-family: 'Georgia', serif;
+            font-size: 1.5rem;
+            color: #3c2415;
+            margin-top: 30px;
+            font-style: italic;
+            border-top: 1px dashed rgba(139, 69, 19, 0.3);
+            padding-top: 20px;
+        }
+
+        .letter .signature small {
+            display: block;
+            font-size: 0.9rem;
+            color: #570000c7;
+            font-style: normal;
+        }
+        .wax-seal {
+            position: absolute;
+            bottom: -20px;
+            right: 40px;
+            width: 60px;
+            height: 60px;
+            background: radial-gradient(circle at 40% 40%, #8b0000, #4a0000);
+            border-radius: 50%;
+            box-shadow: 
+                0 4px 15px rgba(0, 0, 0, 0.4),
+                inset 0 -5px 15px rgba(0, 0, 0, 0.3),
+                inset 0 5px 15px rgba(255, 200, 150, 0.2);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.5rem;
+            color: #d4a574;
+            font-family: 'Georgia', serif;
+            border: 3px solid #5a2a0a;
+            transform: rotate(-10deg);
+        }
+        .wax-seal::after {
+            content: '✦';
+            font-size: 2rem;
+            color: #d4a574;
+            text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+        }
+        .letter .ornament {
+            text-align: center;
+            color: #410000;
+            font-size: 1.5rem;
+            margin: 10px 0;
+            letter-spacing: 10px;
+            opacity: 0.5;
+        }
+        .video-section {
+            float: right;
+            width: 100px;
+            margin: 0 0 0 0;
+            padding: 0px 0px 0px 0;
+            text-align: center;
+        }
+
+        
+
+        .video-section video {
+            display: block;
+            width: 100%;
+            height: auto;
+            border-radius: 1000px;
+        }
+
+        /* Clear float */
+        .clearfix::after {
+            content: '';
+            display: table;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+	<div class="letter">
+        <div class="ornament">♥ ❤ ♡</div>
+        <div class="date">June 20, 2026</div>
+	    <p>Get well soon bhai
+        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I know kaafi time se achhe se baat nhi ho pa rha
+        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ofc kaafi saare chizein chal rhi h
+        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Jaldi thik ho ja na
+        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Aise toh kalesh v nhi kr paa rhi
+        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Movies v dekhna h series v dekhna h
+        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I miss you bhai
+        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bas baat krna h
+        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cheti cheti aa naa</p>
+        <p>I Love You Yush</p>
+        <div class="signature">
+            <small>Buggs</small>
+        </div>
+        <div class="clearfix">
+            <div class="video-section">
+                <!-- REPLACE 'your-video.mp4' WITH YOUR VIDEO FILE PATH -->
+                <video autoplay loop muted playsinline>
+                    <source src="C:\Users\Isha\Pictures\heart.mp4" type="video/mp4">
+                    
+                </video>
+                
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>
